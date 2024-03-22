@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Project</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="grocerystyle.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> Grocery </a>
+
+    <nav class="navbar">
+        
+        <a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="#products">products</a>
+        <a href="#categories">categories</a>
+        <a href="#review">review</a>
+        
+        
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn" ></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box" id="cart-items">
+            
+        </div>
+        
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <p>Get  Fresh Grocery<br>
+            Enoy your life</p>    
+        <h3>fresh and <span>organic</span> products for you</h3>
+        <a href="#" class="btn">shop now</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"> our features</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="feature1.jpeg" alt="">
+            <h3>Fresh Vegetables <br>And Fruits</h3>
+            <p>Fresh vegetables and fruits in cheap price.</p>
+            <button id="navigateBtn">read more</button>
+        </div>
+
+        <div class="box">
+            <img src="feature2.jpeg" alt="">
+            <h3>Free And Fast<br>Delivery</h3>
+            <p>We do fast delivery on your doorsteps for our customers.</p>
+            <button id="navigateBtn1">read more</button>
+        </div>
+
+        <div class="box">
+            <img src="feature3.jpeg" alt="">
+            <h3>Easy And Quick<br> Payments</h3>
+            <p> You can pay easily with your gpay or phonepay</p>
+            <button id="navigateBtn2">read more</button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+<!--product section starts-->
+<section class="products" id="products">
+
+<h1 class="heading"> our products</h1>
+
+<div class="products-container">
+    <div class="product" onclick="toggleProductDetails(this)">
+        <div class="two"><img src="veg.jpeg" alt="Product 1" height="300px" width="300px" ></div>
+        <div class="product-details">
+            <h2>Vegetables</h2><hr>
+            <p>=>Onion</p>
+            <p>=>Carrot</p>
+            <p>=>Cabbage</p>
+            <p>=>Potato</p>
+            <button id="seeMoreBtn1" class="btn">See More</button>
+        </div>
+    </div>
+
+    <div class="product" onclick="toggleProductDetails(this)">
+        <div class="three"><img src="fruit.jpeg" alt="Product 2" height="300px" width="300px"></div>
+        <div class="product-details">
+            <h2>Fresh Fruits</h2><hr>
+            <p>=>Orange</p>
+            <p>=>Strawberry</p>
+            <p>=>Dragon fruit</p>
+            <p>=>Pomegranate</p>
+            <button id="seeMoreBtn2" class="btn">See More</button>
+        </div>
+    </div>
+
+    <div class="product" onclick="toggleProductDetails(this)">
+        <div class="four"><img src="meat.jpeg" alt="Product 3"></div>
+        <div class="product-details">
+            <h2>Fresh Meat</h2><hr>
+            <p>=>chicken</p>
+            <p>=>Meat</p>
+            <p>=>Fish Meat</p>
+            <button id="seeMoreBtn3" class="btn">See More</button>
+        </div>
+    </div>
+
+    <div class="product" onclick="toggleProductDetails(this)">
+        <div class="five"> <img src="milkkii.jpeg" alt="Product 4" height="200px" width="300px"></div>
+        <div class="product-details">
+            <h2>Milk</h2><hr>
+            <p>1/2 liter</p>
+            <p>1 liter</p>
+            <p>1.5 liter</p>
+            <p>2 backer combo</p>
+            <button id="seeMoreBtn4" class="btn">See More</button>
+        </div>
+    </div>
+
+    <div class="product" onclick="toggleProductDetails(this)">
+        <div class="six"> <img src="oilimg.jpeg" alt="Product 5"></div>
+        <div class="product-details">
+            <h2>Brand oil</h2><hr>
+            <p>Fortune oil</p>
+            <p>Goldenfry oil</p>
+            <p>Vegetble oil</p>
+            <button id="seeMoreBtn5" class="btn">See More</button>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+<!-- categories section starts  -->
+
+<section class="categories" id="categories">
+
+<h1 class="heading"> product categories </h1>
+<div class="img-gallary">
+   <div class="one"> <img src="veg.jpeg" width="250px" height="200px">
+    <center><h2>vegetables</h2>
+    <p class="resizable">upto 45% off</p>
+    <a href="veg.html" class="btn">Order Now</a></center>
+</div>
+    <div class="one"><img src="milk.jpg" width="250px" height="200px">
+        <center><h2>Fresh Milk</h2>
+        <p class="resizable">upto 50% off</p>
+        <a href="milk.html" class="btn">Order Now</a></center>
+    </div>
+    <div class="one"><img src="meat.jpeg" width="250px" height="200px">
+        <center><h2>Fresh Meat</h2>
+            <p class="resizable">upto 45% off</p> 
+            <a href="meat.html" class="btn">Order Now</a></center>
+        </div>
+    <div class="one"><img src="frui.jpeg" width="250px" height="200px">
+        <center><h2>Fresh Fruits</h2>
+            <p class="resizable">upto 45% off</p>
+            <a href="fruits.html" class="btn">Order Now</a></center>
+          </div>
+    <div class="one"><img src="oil.jpg" width="250px" height="200px">
+        <center><h2>Oil</h2>
+            <p class="resizable">upto 45% off</p>
+            <a href="oil.html" class="btn">Order Now</a></center>
+        </div>
+</div>
+</section>
+
+
+<section class="review" id="review">
+    <h1 class="heading"> Review </h1>
+    
+    <div class="ratings">
+        <h1>How was your experience?</h1>
+
+        <div class="content">
+            <!-- Question 1 -->
+            <h2>How much did you like the website design?</h2>
+            <div class="rating">
+                <input type="radio" name="rating1" id="star5_1" value="5" type="radio"/>
+                <label for="star5_1">&#9733;</label>
+                <input type="radio" value="4" name="rating1" id="star4_1" type="radio"/>
+                <label for="star4_1">&#9733;</label>
+                <input type="radio" value="3" name="rating1" id="star3_1" type="radio"/>
+                <label for="star3_1">&#9733;</label>
+                <input type="radio" value="2" name="rating1" id="star2_1" type="radio"/>
+                <label for="star2_1">&#9733;</label>
+                <input type="radio" value="1" name="rating1" id="star1_1" type="radio"/>
+                <label for="star1_1">&#9733;</label>
+            </div>
+
+            <!-- Question 2 -->
+            <h2>Rating for Service Quality...</h2>
+            <div class="rating">
+                <input type="radio" name="rating2" id="star5_2" value="5" type="radio"/>
+                <label for="star5_2">&#9733;</label>
+                <input type="radio" value="4" name="rating2" id="star4_2" type="radio"/>
+                <label for="star4_2">&#9733;</label>
+                <input type="radio" value="3" name="rating2" id="star3_2" type="radio"/>
+                <label for="star3_2">&#9733;</label>
+                <input type="radio" value="2" name="rating2" id="star2_2" type="radio"/>
+                <label for="star2_2">&#9733;</label>
+                <input type="radio" value="1" name="rating2" id="star1_2" type="radio"/>
+                <label for="star1_2">&#9733;</label>
+            </div>
+
+            <!-- Question 3 -->
+            <h2>Have you like this?</h2>
+            <div class="rating">
+                <input type="radio" name="rating3" id="star5_3" value="5" type="radio"/>
+                <label for="star5_3">&#9733;</label>
+                <input type="radio" value="4" name="rating3" id="star4_3" type="radio"/>
+                <label for="star4_3">&#9733;</label>
+                <input type="radio" value="3" name="rating3" id="star3_3" type="radio"/>
+                <label for="star3_3">&#9733;</label>
+                <input type="radio" value="2" name="rating3" id="star2_3" type="radio"/>
+                <label for="star2_3">&#9733;</label>
+                <input type="radio" value="1" name="rating3" id="star1_3" type="radio"/>
+                <label for="star1_3">&#9733;</label>
+            </div>
+        </div>
+    
+
+    <div class="links">
+               
+        <div class="logo ">
+          <a href="https://github.com/Sivananthini-3994" target="_blank">
+            <img src="githublogo.png"></a>
+        </div>
+
+        <div class="logo ">
+          <a href="https://www.linkedin.com/in/siva-sathish-b71375285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <img src="linkedinlogo.jpg"></a>
+        </div>
+
+        <div class="logo ">
+            <a href="https://wa.link/yevke7" target="_blank">
+              <img src="whatsapplogo.jpeg"></a>
+          </div>
+
+          <div class="logo ">
+            <a href="https://www.instagram.com/sivananthini_1505/" target="_blank">
+              <img src="instalogo.jpeg"></a>
+          </div>
+  
+  
+    </div>
+</section>
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="groceryscript.js"></script>
+
+</body>
+</html>

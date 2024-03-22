@@ -1,0 +1,68 @@
+
+  body{
+            font-family: arial,sans-serif;
+            display: flex;
+            align-items: center;
+            margin: 0px 0px 0px 0px;
+        
+        }
+        
+        video{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -2;
+            opacity: 1;
+            margin-left:0px;
+            margin-right: 0px;
+        }
+        .container{
+            width: 300px;
+            padding: 20px;
+            margin-left: 440px;
+            border: 1px solid black;
+            
+        }
+        h1{
+            color: white;
+        }
+        label{
+            color: white;
+        }
+        button{
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+        
+        button:hover{
+            background-color: rgb(14, 177, 41);
+        }
+        a{
+            color: antiquewhite;
+        }
+        @media screen and  (max-width:1309) {
+           .container{
+            text-align:center; 
+            margin: auto;
+           }
+            
+        }
+
+        @media screen and  (max-width:1134) {
+            .container{
+             margin-left:150px;
+             text-align:center;
+            }
+             
+         }
+
+         @media screen  and (max-width:1024) {
+            .container{
+                margin: 0 auto;
+                text-align: center;
+            }
+            
+         }
+    
+   

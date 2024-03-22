@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <style>
+        
+body{
+    font-family: arial,sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+
+}
+
+video{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 1;
+    margin-left:0px;
+    margin-right: 0px;
+}
+
+.container {
+    width: 400px;
+    margin: 100px auto; 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    
+}
+h1,h2,p{
+    color: white;
+}
+
+label{
+    color: white;
+}
+button{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(14, 177, 41);
+}
+a{
+    color: antiquewhite;
+}
+
+/* Media query for phones and tablets */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust width to fit smaller screens */
+        margin: 50px auto; /* Center the container */
+        padding: 15px; 
+        text-align: center;/* Adjust padding for smaller screens */
+    }
+}
+</style>
+</head>
+<body>
+    
+    <video id="background-video" autoplay muted loop>
+        <source src="bgvs.mp4" type="video/mp4">
+    </video>
+    
+    <div class="container">
+        <h2>Sign Up</h2>
+        <p>Please fill in the following details to create an account.</p>
+        <form id="signupForm" onsubmit="return submitForm()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            
+            <button type="submit">Sign Up</button><br>
+        </form><br>
+        <button onclick="window.location.href='index.html';">Go to home page</button>
+    </div>
+
+    <script>
+        function submitForm() {
+            // Here you can add JavaScript validation or backend validation
+            alert("Sign up successful!");
+            return false; // Prevent form submission
+        }
+    </script>
+</body>
+</html>

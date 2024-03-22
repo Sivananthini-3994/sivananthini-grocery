@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Details</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product {
+    text-align: center;
+    margin: 20px;
+    flex: 1 1 200px; 
+  }
+
+  .product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .product h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .product p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  #goBackBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #goBackBtn:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+  <center><h1>Grocery Products</h1></center>
+
+<div class="product-container">
+  <!-- Product 1 -->
+  <div class="product">
+    <img src="product-1.png" alt="Product Image">
+    <h1>Orange</h1>
+    <p>Price: $50</p>
+ 
+  </div>
+
+  <!-- Product 2 -->
+  <div class="product">
+    <img src="product-2.png" alt="Product Image">
+    <h1>Onion</h1>
+    <p>Price: $60</p>
+ 
+  </div>
+
+  <!-- Product 3 -->
+  <div class="product">
+    <img src="product-3.png" alt="Product Image">
+    <h1>Meat</h1>
+    <p>Price: $150</p>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="product">
+    <img src="product-4.png" alt="Product Image">
+    <h1>Cabbage</h1>
+    <p>Price: $25</p>
+  </div>
+
+  <!-- Product 5 -->
+  <div class="product">
+    <img src="product-5.png" alt="Product Image">
+    <h1>Potato</h1>
+    <p>Price: $40</p>
+  </div>
+
+  <!-- Product 6 -->
+  <div class="product">
+    <img src="product-6.png" alt="Product Image">
+    <h1>Avocado</h1>
+    <p>Price: $50</p>
+  </div>
+
+  <!-- Product 7 -->
+  <div class="product">
+    <img src="product-7.png" alt="Product Image">
+    <h1>Carrot</h1>
+    <p>Price: $20</p>
+  </div>
+
+  <!-- Product 8 -->
+  <div class="product">
+    <img src="product-8.png" alt="Product Image">
+    <h1>lemon</h1>
+    <p>Price: $30</p>
+  </div>
+
+  <!-- Product 9 -->
+  <div class="product">
+    <img src="product-9.png" alt="Product Image" width="180px" height="160px">
+    <h1>Prone fish</h1>
+    <p>Price: $150</p>
+  </div>
+
+  <!-- Product 10 -->
+  <div class="product">
+    <img src="product-10.png" alt="Product Image">
+    <h1>Watermelon</h1>
+    <p>Price: $20</p>
+  </div>
+
+
+<div class="product">
+  <img src="product11.jpeg" alt="Product Image"  >
+  <h1>Apple</h1>
+  <p>Price: $90</p>
+</div>
+
+
+<div class="product">
+  <img src="product12.jpeg" alt="Product Image">
+  <h1>Pomegranate</h1>
+  <p>Price: $60</p>
+</div>
+
+
+<div class="product">
+  <img src="product13.jpeg" alt="Product Image">
+  <h1>Dragon fruit</h1>
+  <p>Price: $90</p>
+</div>
+
+
+<div class="product">
+  <img src="product14.jpeg" alt="Product Image">
+  <h1>Strawberry</h1>
+  <p>Price: $70</p>
+</div>
+
+<div class="product">
+  <img src="product15.jpeg" alt="Product Image">
+  <h1>1/2 l Milk</h1>
+  <p>Price: $45</p>
+</div>
+
+<div class="product">
+  <img src="product16.jpeg" alt="Product Image">
+  <h1>Vegetable Oil</h1>
+  <p>Price:$250</p>
+</div>
+
+<div class="product">
+  <img src="product17.jpeg" alt="Product Image">
+  <h1>2 liter Milk</h1>
+  <p>Price:$100</p>
+</div>
+
+
+<div class="product">
+  <img src="product18.jpeg" alt="Product Image">
+  <h1>Fortune oil</h1>
+  <p>Price:$300</p>
+</div>
+
+
+
+<div class="product">
+  <img src="product19.jpg" alt="Product Image">
+  <h1>2 backet Combo</h1>
+  <p>Price:$110</p>
+</div>
+
+
+<div class="product">
+  <img src="product20.jpeg" alt="Product Image">
+  <h1>Goldenfry oil</h1>
+  <p>Price:$190</p>
+</div>
+
+
+</div>
+
+
+<center><h1>Only Online Payment</h1></center>
+
+<button id="goBackBtn">Go Back</button>
+
+<script>
+  document.getElementById("goBackBtn").addEventListener("click", function() {
+    // Navigate back to the index page
+    window.location.href = "index.html";
+  });
+</script>
+
+</body>
+</html>

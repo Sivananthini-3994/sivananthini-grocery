@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        img{
+            margin-top: 7%;
+        }
+        #goBackBtn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor:  pointer;
+            border-radius: 5px;
+        }
+
+  #goBackBtn:hover {
+    background-color: #0056b3;
+  }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="card.png" width="300px" height="200px" >
+        <h1>
+            "Streamline your grocery shopping with 
+            quick and secure payments via GPAY and PhonePe! 
+            Enjoy the convenience of instant transactions, 
+            making your shopping experience smoother than ever."
+        </h1>
+    </center>
+
+    
+    <button id="goBackBtn">Go Back</button>
+
+    <script>
+      document.getElementById("goBackBtn").addEventListener("click", function() {
+        window.location.href = "index.html";
+      });
+    </script>
+        
+</body>
+</html>
